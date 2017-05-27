@@ -75,7 +75,7 @@
 	*   Transitivas: es bidireccional, hay confianza entre todos los dominios de un árbol, relación padre-hijo.
 	*   Unidireccionales: relaciones manuales entre dominios de un bosque, siven para crear atajos y mejorar prestaciones.
 	*   Bosque: integra organizaciones con sistemas ya instalados, permite a los usuarios acceder a los recursos del otro bosque.
-	    *	**No son relaciones transitivas.
+	    *	**No son relaciones transitivas**.
 	    *	Cada bosque tiene su catálogo global y schema.
 	*   Realms: permite tener relaciones de confianza entre AD y otras implementaciones de Kerberos.
 
@@ -91,21 +91,21 @@ La estructura física viene delimitada por los **Controladores de dominio** y lo
 
 ### Controladores de dominio
 
-    *	Es un ordenadore que ejecuta Windows Server
-    *	Almacena la base de datos de AD.
-    *	Gestiona los cambios en el directorio y propaga estos cambios a otros controladores del mismo dominio.
-    *	LLeva a cabo los proceso de login, autenticación y búsqueda en el directorio.
-    *	Por cada dominio puede haber más de un controlador de domino, mejora la tolerancia a fallos.
+*	Es un ordenadore que ejecuta Windows Server
+*	Almacena la base de datos de AD.
+*	Gestiona los cambios en el directorio y propaga estos cambios a otros controladores del mismo dominio.
+*	LLeva a cabo los proceso de login, autenticación y búsqueda en el directorio.
+*	Por cada dominio puede haber más de un controlador de domino, mejora la tolerancia a fallos.
 
 #### CD y catálogo global
 
-    *	El primer DC se cibvuerte en el servidor del catálogo global
-    *	Gestiona las peticiones para el catálogo global.
-    *	Conviene añadir más servidores para el balanceo de carga.
-    *	Solo tiene permisos de lectura para el catálogo global.
-    *	Los usuarios universales se almacenan en el catálogo global.
+*	El primer DC se cibvuerte en el servidor del catálogo global
+*	Gestiona las peticiones para el catálogo global.
+*	Conviene añadir más servidores para el balanceo de carga.
+*	Solo tiene permisos de lectura para el catálogo global.
+*	Los usuarios universales se almacenan en el catálogo global.
 
 ### Replicas del directorio Activo
 
-    *	Los DC en una red W2K siguen el modelo multimaste: todos los servidores tienen una base de datos donde se puede actualizar la información.
-    *	Existen réplicas para sincronizar las bases de datos de lo DC.
+*	Los DC en una red W2K siguen el modelo multimaste: todos los servidores tienen una base de datos donde se puede actualizar la información.
+*	Existen réplicas para sincronizar las bases de datos de lo DC.
