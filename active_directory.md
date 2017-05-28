@@ -97,7 +97,7 @@ La estructura física viene delimitada por los **Controladores de dominio** y lo
 *	LLeva a cabo los proceso de login, autenticación y búsqueda en el directorio.
 *	Por cada dominio puede haber más de un controlador de domino, mejora la tolerancia a fallos.
 
-#### CD y catálogo global
+#### DC y catálogo global
 
 *	El primer DC se cibvuerte en el servidor del catálogo global
 *	Gestiona las peticiones para el catálogo global.

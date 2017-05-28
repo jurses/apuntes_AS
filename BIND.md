@@ -1,5 +1,9 @@
 # BIND _Berkely Internet Name Domain_
 
+## ¿Qué es BIND?
+
+> BIND es el servidor de DNS más comúnmente usado en Internet, especialmente en sistemas Unix.
+
 ## BIND, cliente Linux
 
 *	Fichero /etc/resolv.conf
